@@ -26,7 +26,7 @@
 </blockquote>
 
 ## git
-- https://github.com/abbeyroad2022/energyplusev-pub
+- https://github.com/abbeyroad2022/energyplusevPub
 
 ## local
 - `gulp`
@@ -34,4 +34,4 @@
 
 ## deploy
 - `npm run deploy`
-- https://abbeyroad2022.github.io/energyplusev-pub/coding_list
+- https://abbeyroad2022.github.io/energyplusevPub/coding_list
