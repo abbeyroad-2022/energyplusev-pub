@@ -11502,3 +11502,6 @@ label { margin-bottom: 8px; }
 .charging-benefit .ic-coupon { display: inline-block; width: 50px; height: 50px; margin: 0 auto; }
 
 .charging-benefit .note-txt { margin-bottom: 6px; }
+
+/* 22-11-14 GS25 쿠폰 추가 */
+.item-box-coupon.type5 .ico:before { background-image: url(../images/ic-gs25.svg); }
