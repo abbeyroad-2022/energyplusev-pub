@@ -1423,9 +1423,6 @@ position: relative;
 }
 
 
-
-
-
 /* 22-10-28 EV 이벤트 UI 추가 */
 .ev-event-wrap {
     position: relative;
@@ -1895,3 +1892,6 @@ position: relative;
         margin-bottom: 6px;
     }
 }
+
+/* 22-11-14 GS25 쿠폰 추가 */
+.item-box-coupon.type5 .ico:before { background-image: url(../images/ic-gs25.svg); }
