@@ -9,7 +9,7 @@
     "pages": "env-cmd -f .env.pages gulp build",
     "deploy": "npm run pages && npm run build"
   },
-  "homepage": "https://abbeyroad-2022.github.io/energyplusevPub/",
+  "homepage": "https://abbeyroad-2022.github.io/energyplusev-pub/",
   "author": "liam",
   "license": "ISC",
   "dependencies": {
