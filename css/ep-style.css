@@ -11366,3 +11366,24 @@ label { margin-bottom: 8px; }
 
 /* 22-11-14 GS25 쿠폰 추가 */
 .item-box-coupon.type5 .ico:before { background-image: url(../images/ic-gs25.svg); }
+
+/* 22-11-24 쿠폰/포인트/카드 정보 추가  */
+.barcode-wrap.auto { height: auto; }
+
+.charge-info-box { display: flex; width: 100%; justify-content: space-between; align-items: center; }
+
+.charge-info-box .charge-info-stitle { width: 100%; padding-bottom: 10px; font-weight: 600; letter-spacing: -0.5; }
+
+.charge-info-box .charge-info-inbox { text-align: center; width: 48.5%; padding: 14px 0px; background-color: #f5f5f5; border: 1px solid #e5e5e5; border-radius: 6px; }
+
+.charge-info-box .charge-info-inbox p { font-size: 13px; padding-bottom: 4px; }
+
+.charge-info-box .charge-info-inbox strong { font-size: 14px; font-weight: 600; }
+
+.charge-info-box.linebox { flex-wrap: wrap; padding: 15px 13px; border: 1px solid #e5e5e5; border-radius: 6px; }
+
+.nfc-box { padding: 30px 0px 20px; }
+
+.nfc-box p { padding: 10px 0; }
+
+.nfc-box p strong { display: block; font-weight: 600; }
