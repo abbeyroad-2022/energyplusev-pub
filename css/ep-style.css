@@ -11364,7 +11364,7 @@ label { margin-bottom: 8px; }
 
 .contents-section .content-inner .product-detail .item-info { position: relative; left: auto; margin: 0 8px; }
 
-/* 22-11-25 GS25 쿠폰 추가 */
+/* 22-11-14 GS25 쿠폰 추가 */
 .item-box-coupon.type5 .ico:before { background-image: url(../images/ic-gs25.svg); }
 
 /* 22-11-25 쿠폰/포인트/카드 정보 추가  */
