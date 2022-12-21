@@ -710,3 +710,347 @@ button[class*='btn-'] { display: flex; align-items: center; border: 0; outline: 
         }
     }
 }
+
+/* 221215 룰렛 이벤트 */
+.ev-txt {
+    &-xlg img {
+        height: 16px;
+    }
+}
+.bg-gradient {
+    background: #fefefe;
+    background: linear-gradient(to top, #eaeaea 0%, #fefefe 100%);
+}
+.ft-mon {
+    font-family: "Montserrat", sans-serif;
+} 
+.ft-nts {
+    font-family: "NotoSansCJKkr", sans-serif;
+}
+.event-btn {
+    &.btn-type3 {
+        margin: 0 auto;
+        padding: 0 28px;
+        height: 45px;
+		color: #fff;
+		font-size: 20px;
+        border-radius: 30px;
+        background-color: #492ce9;
+        box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+        &:disabled,
+        &.is-disabled,
+        &.is-complete {
+            background-color: #cbcbcb;
+        }
+	}
+    &.btn-type4 {
+        margin: 5px auto;
+        padding: 0 5px;
+        width: 80px;
+        height: 30px;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 30px;
+        background-color: #492ce9;
+        &:disabled,
+        &.is-disabled,
+        &.is-complete {
+            background-color: #cbcbcb;
+        }
+	}
+}
+.roulette-content {
+    .roulette-main{
+        /* 룰렛 타이틀 */
+        .ev-main-title {
+            padding: 20vw 20px 3vw;
+            font-size: 7.222vw;
+            font-weight: 300;
+            color: #222222;
+            line-height: 1.2;
+            .bf {
+                font-size: 9.2vw;
+                padding-bottom: 10px;
+            }
+            .roulette-count {
+                position: relative;
+                p {
+                    position: absolute;
+                    font-weight: 500;
+                    &:nth-child(2) {
+                        top: 54%;
+                        left: 49%;
+                        font-size: 4.2vw;
+                        color: #fff;
+                        transform: translateX(-50%);
+                    }
+                    &:nth-child(3) {
+                        top:74%;
+                        left: 7%;
+                        font-size: 4.6vw;
+                        color: #492ce9 
+                    }
+                    &:nth-child(4) {
+                        top:74%;
+                        left: 54%;
+                        font-size: 4.6vw;
+                        color: #492ce9
+                    }
+                    span {padding-left: 1.5vw;}
+                }
+            }
+            .info {
+                display: block;
+                text-align: center;
+                font-size:4vw;
+                color: rgb(153, 153, 153);
+            }
+        }
+        .ev-event-period{
+            position: absolute;
+            top: 11vw;
+            left: 3vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5.34% 0 4%;
+            height: 6.5vw;
+            color: #000;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 1.1;
+            border-radius: 50px;
+            background-color: #fff;
+            border: 1px solid #eaeaea;
+            box-shadow: 3px 3px 0 rgba(234 , 234, 234, 1);
+            z-index: 1;
+            .ff-en {
+                font-family: "Montserrat", sans-serif;
+            }
+        }
+        .roulette-count{
+            position: relative
+        } 
+    }
+    
+    // 룰렛
+    .roulette-wheel {
+        position: relative;
+        .logout-inner {
+            display: none;
+        }
+        &.is-logout {
+            .logout-inner {
+                display: block;
+                position: absolute;
+                top: 12.5555%;
+                left: 10%;
+                padding: 40%;
+                background-color: rgba(0, 0, 0, 0.16);
+                border-radius: 50%;
+                .logout-btns {
+                    position: absolute;
+                    top: 49%;
+                    left: 15%;
+                    width: 70%;
+                    padding: 5%;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 600;
+                    background-color: #fff;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .inner {
+            position: relative;
+            padding: 0;
+            &:after,
+            .btn-engagement {
+                display: none;
+            }
+        }
+        .roulette-area {
+            position: relative;
+            width: 100%;
+            padding-top: 117%;
+            background: url("../images/roulette-wheel-bg.png") 50% top/cover no-repeat;
+            overflow: hidden;
+            .roulette {
+                position: absolute;
+                top:12.5555%;
+                left: 10.5%;
+                width: 79%;
+                transform-origin: 49.99% 49.89%;
+                &.anim {
+                    animation-name: rotate;
+                    animation-duration: 0.2s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+            }
+            .roulette-btn {
+                position: absolute;
+                top: 35.5%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 23vw;
+                height:23vw;
+                background-color: #492ce9;
+                border-radius: 50%;
+                box-shadow: 0 5px 0 #000d71;
+                color: #fff;
+                font-size: 4.5vw;
+            }
+            .result-btn {
+                position: absolute;
+                left: 50%;
+                bottom: 3%;
+                transform: translateX(-50%);
+            }
+            .arrow {
+                position: absolute;
+                top: 12%;
+                left: 44.2%;
+                padding: 5% 6%;
+                background: url("../images/rt-arrow.png") 50% top/cover no-repeat;
+            }
+        }
+    }
+    
+    // 경품 안내
+    .event-giveaway {
+        position: relative;
+        padding: 60px 20px 20px;
+        .inner {
+            padding: 40px 22px 20px 10px;
+            border:2px solid #492ce9;
+            border-radius: 10px;
+        }
+        .ev-event-title {
+            position: absolute;
+            top:45px; 
+            left:50%;
+            transform:translateX(-50%);
+            padding: 0 15px;
+            background-color: #f7f7f7;
+            color:#492ce9;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li {
+                width: 48%;
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 1.1;
+                text-align: center;
+                .coupon {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 110px;
+                    height: 60px;
+                    padding: 0px 0px 0px 15px;
+                    margin: 0 auto;
+                    background: url("../images/roulette-coupon-bg.png") 50%/contain no-repeat;                    
+                    text-align: left; 
+                    justify-content: center;
+                    .tit {
+                        padding-bottom: 3px;
+                        font-size: 13px;
+                        color:#492ce9;
+                    }
+                    .amount {
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                    .num {
+                        position: absolute;
+                        top: -19px;
+                        right: -15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
+                        background-color: #fed92b;
+                        border-radius: 50%;
+                        font-size: 10.5px;
+                        letter-spacing: -0.5px;
+                        .ft-mon {
+                            transform: translateY(1px);
+                        }
+                    }
+                }
+                > span {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: -0.5px;
+                    padding: 10px 0 35px;
+                }
+            }
+        }
+    }
+
+    // 참여 방법
+    .ev-event-guide{
+        background-color: transparent;
+        .ev-event-title {
+            color:#492ce9;
+        }
+        .guide-item {
+            position: relative;
+            padding-left: 50px;
+            background-color: transparent;
+            box-shadow: none;
+            border:2px solid #492ce9;
+        }
+        .tit {
+            color: #492ce9;
+        }
+        .num{
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            background-color:#492ce9;
+        }
+        .note-txt {
+            margin: 5px 0;
+            letter-spacing: -0.8px;
+        }
+    }
+    
+    @media (max-width: 750px) {
+        .roulette-main .ev-event-period {
+            font-size: 3.7333vw;
+        }
+    }
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+  }
+
+    
+@media (min-width: 400px) {
+    .roulette-content .event-giveaway ul li .coupon {
+        width: 130px;
+        height: 70px;
+        padding: 0px 0px 0px 20px;
+    } 
+    .roulette-content .event-giveaway ul li .coupon .num {
+        top: -23px;
+        right: -21px;
+        width: 50px;
+        height: 50px;
+        font-size: 11px;
+    }
+}
