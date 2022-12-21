@@ -6170,3 +6170,111 @@ button[class*='btn-'] { display: flex; align-items: center; border: 0; outline: 
 	.charging-gauge .gauge-info .tit { font-size: 6.4vw; }
 	.charging-gauge .gauge-info .wattage { font-size: 4.9333vw; }
 	.charging-gauge .gauge-info .wattage .gauge-value { font-size: 13.6vw; } }
+
+/* 221215 룰렛 이벤트 */
+.ev-txt-xlg img { height: 16px; }
+
+.bg-gradient { background: #fefefe; background: linear-gradient(to top, #eaeaea 0%, #fefefe 100%); }
+
+.ft-mon { font-family: "Montserrat", sans-serif; }
+
+.ft-nts { font-family: "NotoSansCJKkr", sans-serif; }
+
+.event-btn.btn-type3 { margin: 0 auto; padding: 0 28px; height: 45px; color: #fff; font-size: 20px; border-radius: 30px; background-color: #492ce9; box-shadow: 5px 5px 0 black; }
+
+.event-btn.btn-type3:disabled, .event-btn.btn-type3.is-disabled, .event-btn.btn-type3.is-complete { background-color: #cbcbcb; }
+
+.event-btn.btn-type4 { margin: 5px auto; padding: 0 5px; width: 80px; height: 30px; color: #fff; font-size: 18px; border-radius: 30px; background-color: #492ce9; }
+
+.event-btn.btn-type4:disabled, .event-btn.btn-type4.is-disabled, .event-btn.btn-type4.is-complete { background-color: #cbcbcb; }
+
+.roulette-content .roulette-main { /* 룰렛 타이틀 */ }
+
+.roulette-content .roulette-main .ev-main-title { padding: 20vw 20px 3vw; font-size: 7.222vw; font-weight: 300; color: #222222; line-height: 1.2; }
+
+.roulette-content .roulette-main .ev-main-title .bf { font-size: 9.2vw; padding-bottom: 10px; }
+
+.roulette-content .roulette-main .ev-main-title .roulette-count { position: relative; }
+
+.roulette-content .roulette-main .ev-main-title .roulette-count p { position: absolute; font-weight: 500; }
+
+.roulette-content .roulette-main .ev-main-title .roulette-count p:nth-child(2) { top: 54%; left: 49%; font-size: 4.2vw; color: #fff; transform: translateX(-50%); }
+
+.roulette-content .roulette-main .ev-main-title .roulette-count p:nth-child(3) { top: 74%; left: 7%; font-size: 4.6vw; color: #492ce9; }
+
+.roulette-content .roulette-main .ev-main-title .roulette-count p:nth-child(4) { top: 74%; left: 54%; font-size: 4.6vw; color: #492ce9; }
+
+.roulette-content .roulette-main .ev-main-title .roulette-count p span { padding-left: 1.5vw; }
+
+.roulette-content .roulette-main .ev-main-title .info { display: block; text-align: center; font-size: 4vw; color: #999999; }
+
+.roulette-content .roulette-main .ev-event-period { position: absolute; top: 11vw; left: 3vw; display: flex; align-items: center; justify-content: center; padding: 0 5.34% 0 4%; height: 6.5vw; color: #000; font-size: 28px; font-weight: 500; line-height: 1.1; border-radius: 50px; background-color: #fff; border: 1px solid #eaeaea; box-shadow: 3px 3px 0 #eaeaea; z-index: 1; }
+
+.roulette-content .roulette-main .ev-event-period .ff-en { font-family: "Montserrat", sans-serif; }
+
+.roulette-content .roulette-main .roulette-count { position: relative; }
+
+.roulette-content .roulette-wheel { position: relative; }
+
+.roulette-content .roulette-wheel .logout-inner { display: none; }
+
+.roulette-content .roulette-wheel.is-logout .logout-inner { display: block; position: absolute; top: 12.5555%; left: 10%; padding: 40%; background-color: rgba(0, 0, 0, 0.16); border-radius: 50%; }
+
+.roulette-content .roulette-wheel.is-logout .logout-inner .logout-btns { position: absolute; top: 49%; left: 15%; width: 70%; padding: 5%; text-align: center; font-size: 15px; font-weight: 600; background-color: #fff; transform: translateY(-50%); }
+
+.roulette-content .roulette-wheel .inner { position: relative; padding: 0; }
+
+.roulette-content .roulette-wheel .inner:after, .roulette-content .roulette-wheel .inner .btn-engagement { display: none; }
+
+.roulette-content .roulette-wheel .roulette-area { position: relative; width: 100%; padding-top: 117%; background: url("../images/roulette-wheel-bg.png") 50% top/cover no-repeat; overflow: hidden; }
+
+.roulette-content .roulette-wheel .roulette-area .roulette { position: absolute; top: 12.5555%; left: 10.5%; width: 79%; transform-origin: 49.99% 49.89%; }
+
+.roulette-content .roulette-wheel .roulette-area .roulette.anim { animation-name: rotate; animation-duration: 0.2s; animation-iteration-count: infinite; animation-timing-function: linear; }
+
+.roulette-content .roulette-wheel .roulette-area .roulette-btn { position: absolute; top: 35.5%; left: 50%; transform: translateX(-50%); width: 23vw; height: 23vw; background-color: #492ce9; border-radius: 50%; box-shadow: 0 5px 0 #000d71; color: #fff; font-size: 4.5vw; }
+
+.roulette-content .roulette-wheel .roulette-area .result-btn { position: absolute; left: 50%; bottom: 3%; transform: translateX(-50%); }
+
+.roulette-content .roulette-wheel .roulette-area .arrow { position: absolute; top: 12%; left: 44.2%; padding: 5% 6%; background: url("../images/rt-arrow.png") 50% top/cover no-repeat; }
+
+.roulette-content .event-giveaway { position: relative; padding: 60px 20px 20px; }
+
+.roulette-content .event-giveaway .inner { padding: 40px 22px 20px 10px; border: 2px solid #492ce9; border-radius: 10px; }
+
+.roulette-content .event-giveaway .ev-event-title { position: absolute; top: 45px; left: 50%; transform: translateX(-50%); padding: 0 15px; background-color: #f7f7f7; color: #492ce9; }
+
+.roulette-content .event-giveaway ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+
+.roulette-content .event-giveaway ul li { width: 48%; font-family: "Montserrat", sans-serif; font-size: 14px; font-weight: 700; line-height: 1.1; text-align: center; }
+
+.roulette-content .event-giveaway ul li .coupon { position: relative; display: flex; flex-direction: column; align-items: flex-start; width: 110px; height: 60px; padding: 0px 0px 0px 15px; margin: 0 auto; background: url("../images/roulette-coupon-bg.png") 50%/contain no-repeat; text-align: left; justify-content: center; }
+
+.roulette-content .event-giveaway ul li .coupon .tit { padding-bottom: 3px; font-size: 13px; color: #492ce9; }
+
+.roulette-content .event-giveaway ul li .coupon .amount { font-size: 15px; font-weight: 600; }
+
+.roulette-content .event-giveaway ul li .coupon .num { position: absolute; top: -19px; right: -15px; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; background-color: #fed92b; border-radius: 50%; font-size: 10.5px; letter-spacing: -0.5px; }
+
+.roulette-content .event-giveaway ul li .coupon .num .ft-mon { transform: translateY(1px); }
+
+.roulette-content .event-giveaway ul li > span { display: block; font-size: 14px; font-weight: 600; letter-spacing: -0.5px; padding: 10px 0 35px; }
+
+.roulette-content .ev-event-guide { background-color: transparent; }
+
+.roulette-content .ev-event-guide .ev-event-title { color: #492ce9; }
+
+.roulette-content .ev-event-guide .guide-item { position: relative; padding-left: 50px; background-color: transparent; box-shadow: none; border: 2px solid #492ce9; }
+
+.roulette-content .ev-event-guide .tit { color: #492ce9; }
+
+.roulette-content .ev-event-guide .num { position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: #492ce9; }
+
+.roulette-content .ev-event-guide .note-txt { margin: 5px 0; letter-spacing: -0.8px; }
+
+@media (max-width: 750px) { .roulette-content .roulette-main .ev-event-period { font-size: 3.7333vw; } }
+
+@keyframes rotate { from { transform: rotate(360deg); } }
+
+@media (min-width: 400px) { .roulette-content .event-giveaway ul li .coupon { width: 130px; height: 70px; padding: 0px 0px 0px 20px; }
+	.roulette-content .event-giveaway ul li .coupon .num { top: -23px; right: -21px; width: 50px; height: 50px; font-size: 11px; } }
